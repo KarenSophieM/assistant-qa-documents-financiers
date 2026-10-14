@@ -1,21 +1,29 @@
-"""Extraction du texte d'un PDF, page par page, avec conservation du numéro de page."""
+"""Extraction du texte d'un PDF, page par page, avec conservation du numéro de page.
+
+Utilise pdfplumber plutôt que pypdf : sur ce document, pdfplumber reconstitue
+bien mieux l'ordre naturel de lecture (libellé + valeurs sur la même ligne)
+pour la grande majorité des tableaux financiers simples. Seuls les tableaux à
+en-têtes multi-niveaux (ex. variation des capitaux propres) restent mal extraits
+par les deux méthodes : limite connue, documentée dans le README plutôt que
+masquée.
+"""
 
 import json
 import pathlib
 from typing import Dict, List
 
-from pypdf import PdfReader
+import pdfplumber
 
 DATA_DIR = pathlib.Path(__file__).resolve().parent.parent / "data"
 
 
 def extract_pages(pdf_path: str) -> List[Dict]:
     """Retourne une liste de {"page": numéro (1-indexé), "text": texte brut de la page}."""
-    reader = PdfReader(pdf_path)
     pages = []
-    for i, page in enumerate(reader.pages, start=1):
-        text = page.extract_text() or ""
-        pages.append({"page": i, "text": text})
+    with pdfplumber.open(pdf_path) as pdf:
+        for i, page in enumerate(pdf.pages, start=1):
+            text = page.extract_text() or ""
+            pages.append({"page": i, "text": text})
     return pages
 
 
