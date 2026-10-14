@@ -1,6 +1,6 @@
 # Assistant Q&A sur documents financiers publics
 
-Assistant qui répond à des questions sur des documents financiers publics (extraits du Document d'Enregistrement Universel 2025 de BNP Paribas), en citant systématiquement la page source et en répondant honnêtement "je ne trouve pas" quand l'information n'est pas présente dans le document.
+Assistant qui répond à des questions sur des documents financiers publics (extraits du 2ème amendement au Document d'Enregistrement Universel de BNP Paribas, résultats du 1er semestre 2026 : rapport d'activité et états financiers), en citant systématiquement la page source et en répondant honnêtement "je ne trouve pas" quand l'information n'est pas présente dans le document.
 
 Projet construit dans le cadre d'une candidature pour un poste Développeur Agent IA / Agentic AI, en collaboration avec [Lionel](https://github.com/llunda).
 

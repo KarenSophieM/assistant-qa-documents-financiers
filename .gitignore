@@ -1,3 +1,6 @@
+# Données dérivées, régénérables via les scripts de src/ (pas de .env, voir plus bas)
+data/processed/*.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
