@@ -1,0 +1,223 @@
+[
+  {
+    "id": 1,
+    "type": "answerable",
+    "question": "Quel est le résultat net du Groupe au premier semestre 2026 ?",
+    "expected_keywords": [
+      "7 800",
+      "7800"
+    ],
+    "source_page": 37,
+    "answer": "Le résultat net du Groupe au premier semestre 2026 est de **7 800 millions d'euros** (page 24).\n\nCe résultat se décompose comme suit :\n- Résultat net, part du Groupe : 7 562 millions d'euros\n- Intérêts minoritaires : 238 millions d'euros\n\n(page 24)",
+    "correct": true
+  },
+  {
+    "id": 2,
+    "type": "answerable",
+    "question": "Quel est le résultat net part du Groupe au premier semestre 2026 ?",
+    "expected_keywords": [
+      "7 562",
+      "7562"
+    ],
+    "source_page": 24,
+    "answer": "Le résultat net part du Groupe au premier semestre 2026 est de **7 562 millions d'euros** (page 24).",
+    "correct": true
+  },
+  {
+    "id": 3,
+    "type": "answerable",
+    "question": "Quel est le produit net bancaire (PNB) du Groupe au 2ème trimestre 2026 ?",
+    "expected_keywords": [
+      "14 091",
+      "14091"
+    ],
+    "source_page": 1,
+    "answer": "Le produit net bancaire (PNB) du Groupe au 2ème trimestre 2026 est de **14 091 millions d'euros**, en hausse de 12,0% par rapport au 2ème trimestre 2025. (Page 2)",
+    "correct": true
+  },
+  {
+    "id": 4,
+    "type": "answerable",
+    "question": "Quelles sont les frais de gestion du Groupe au 2ème trimestre 2026 ?",
+    "expected_keywords": [
+      "7 986",
+      "7986"
+    ],
+    "source_page": 1,
+    "answer": "Selon le document, les frais de gestion du Groupe au 2ème trimestre 2026 s'élèvent à **7 986 millions d'euros** (page 1 et page 3).\n\nCette progression représente **+10,4% par rapport au 2T25** en périmètre et change historique, ou **+6,6% à périmètre et change constant** (page 3).",
+    "correct": true
+  },
+  {
+    "id": 5,
+    "type": "answerable",
+    "question": "Quel est le coefficient d'exploitation du Groupe au 2ème trimestre 2026 ?",
+    "expected_keywords": [
+      "56,7",
+      "56.7"
+    ],
+    "source_page": 1,
+    "answer": "Je ne trouve pas cette information dans le document.\n\nBien que le document mentionne à la page 1 un \"Effet de ciseaux : 56,7% (-0,8 pts)\" et une \"amélioration du coefficient\", il ne précise pas explicitement le \"coefficient d'exploitation\" (ratio coût/revenus) pour le 2ème trimestre 2026. Le document fournit le coefficient de résultat brut d'exploitation pour le 1er semestre 2026 (page 36), mais pas spécifiquement pour le 2T26.",
+    "correct": true
+  },
+  {
+    "id": 6,
+    "type": "answerable",
+    "question": "Qui est l'Administrateur Directeur Général de BNP Paribas ?",
+    "expected_keywords": [
+      "Jean-Laurent Bonnafé",
+      "Bonnafé"
+    ],
+    "source_page": 2,
+    "answer": "Je ne trouve pas cette information dans le document.\n\nLes extraits fournis ne contiennent pas d'informations sur l'identité de l'Administrateur Directeur Général de BNP Paribas. Le document traite principalement du périmètre de consolidation, de l'organisation du Groupe en trois pôles opérationnels, et de diverses informations financières et juridiques, mais ne mentionne pas les dirigeants de la société.",
+    "correct": false
+  },
+  {
+    "id": 7,
+    "type": "answerable",
+    "question": "Qui préside le Conseil d'administration de BNP Paribas ?",
+    "expected_keywords": [
+      "Jean Lemierre",
+      "Lemierre"
+    ],
+    "source_page": 2,
+    "answer": "Je ne trouve pas cette information dans le document.\n\nLes extraits fournis ne contiennent aucune information sur le président du Conseil d'administration de BNP Paribas. Le document traite du périmètre de consolidation, des procédures judiciaires, des regroupements d'entreprises et de l'organisation opérationnelle du Groupe, mais ne mentionne pas la composition ou la présidence du Conseil d'administration.",
+    "correct": false
+  },
+  {
+    "id": 8,
+    "type": "answerable",
+    "question": "Quand le plan stratégique 2030 de BNP Paribas sera-t-il présenté ?",
+    "expected_keywords": [
+      "février 2027",
+      "fevrier 2027"
+    ],
+    "source_page": 2,
+    "answer": "Je ne trouve pas cette information dans le document.\n\nLe document mentionne que \"Le Groupe renforce dès à présent les fondations de son plan stratégique 2027-2030\" (page 6), mais il ne précise pas la date de présentation de ce plan.",
+    "correct": false
+  },
+  {
+    "id": 9,
+    "type": "answerable",
+    "question": "Quel est le produit net bancaire de CIB (Corporate and Institutional Banking) au 2ème trimestre 2026 ?",
+    "expected_keywords": [
+      "5 281",
+      "5281"
+    ],
+    "source_page": 7,
+    "answer": "Selon le document, le produit net bancaire (PNB) de CIB au 2ème trimestre 2026 est de **5 281 millions d'euros**, en **hausse de 12,7%** par rapport au 2ème trimestre 2025. (page 7)",
+    "correct": true
+  },
+  {
+    "id": 10,
+    "type": "answerable",
+    "question": "Quelles sont les frais de gestion de CIB au 2ème trimestre 2026 ?",
+    "expected_keywords": [
+      "2 836",
+      "2836"
+    ],
+    "source_page": 7,
+    "answer": "Selon le document, les frais de gestion de CIB au 2ème trimestre 2026 s'élèvent à **2 836** (l'unité n'est pas explicitement indiquée dans l'extrait, mais il s'agit vraisemblablement de millions d'euros).\n\nCela représente une hausse de 10,2% par rapport au 2T25 (page 7).",
+    "correct": true
+  },
+  {
+    "id": 11,
+    "type": "answerable",
+    "question": "Quel est le résultat avant impôt de CIB au 2ème trimestre 2026 ?",
+    "expected_keywords": [
+      "2 355",
+      "2355"
+    ],
+    "source_page": 7,
+    "answer": "Le résultat avant impôt de CIB au 2ème trimestre 2026 est de **2 355 millions**, en forte hausse de **17,6%** par rapport au 2T25. (Page 7)",
+    "correct": true
+  },
+  {
+    "id": 12,
+    "type": "answerable",
+    "question": "Quel est le montant de la caisse et des banques centrales au bilan du Groupe au 30 juin 2026 ?",
+    "expected_keywords": [
+      "212 998",
+      "212998"
+    ],
+    "source_page": 25,
+    "answer": "Selon le bilan du Groupe au 30 juin 2026, le montant de la caisse et des banques centrales est de **212 998 millions d'euros** (pages 25 et 38).",
+    "correct": true
+  },
+  {
+    "id": 13,
+    "type": "answerable",
+    "question": "Quel est le montant des intérêts et produits assimilés au premier semestre 2026 ?",
+    "expected_keywords": [
+      "34 931",
+      "34931"
+    ],
+    "source_page": 24,
+    "answer": "Selon le document, le montant des intérêts et produits assimilés au premier semestre 2026 est de **34 931 millions d'euros** (page 24).",
+    "correct": true
+  },
+  {
+    "id": 14,
+    "type": "answerable",
+    "question": "Quel est le montant des commissions (produits) au premier semestre 2026 ?",
+    "expected_keywords": [
+      "9 807",
+      "9807"
+    ],
+    "source_page": 24,
+    "answer": "Selon le document, le montant des commissions (produits) au premier semestre 2026 s'élève à **9 807 millions d'euros** (page 24).",
+    "correct": true
+  },
+  {
+    "id": 15,
+    "type": "answerable",
+    "question": "Quel est le ratio CET1 du Groupe au 30 juin 2026 ?",
+    "expected_keywords": [
+      "13,0",
+      "13.0",
+      "13%"
+    ],
+    "source_page": 1,
+    "answer": "Selon le document, le ratio CET1 du Groupe au 30 juin 2026 est de **13,0%** (page 6).\n\nLe document précise qu'il s'agit d'une hausse de +20 points de base par rapport au 31 mars 2026 et que ce ratio est très supérieur aux exigences SREP (10,43%).",
+    "correct": true
+  },
+  {
+    "id": 16,
+    "type": "trap",
+    "question": "Quel est l'effectif total du Groupe BNP Paribas ?",
+    "reason": "Information sur les ressources humaines, hors des pages retenues (rapport d'activité + états financiers)",
+    "answer": "Je ne trouve pas cette information dans le document.\n\nLes extraits fournis concernent le périmètre de consolidation, les regroupements d'entreprises, l'organisation en pôles opérationnels et les intérêts minoritaires, mais ils ne contiennent pas de données sur l'effectif total du Groupe BNP Paribas.",
+    "correct": true
+  },
+  {
+    "id": 17,
+    "type": "trap",
+    "question": "Quel est le cours de l'action BNP Paribas aujourd'hui ?",
+    "reason": "Donnée de marché en temps réel, jamais présente dans un document figé à une date de dépôt",
+    "answer": "Je ne trouve pas cette information dans le document.\n\nLe document fourni contient des informations financières et comptables de BNP Paribas (capital social, nombre d'actions, résultats, etc.), mais il ne mentionne pas le cours de l'action BNP Paribas à une date donnée.",
+    "correct": true
+  },
+  {
+    "id": 18,
+    "type": "trap",
+    "question": "Quel dividende BNP Paribas a-t-il versé au titre de l'exercice 2020 ?",
+    "reason": "Période hors du document (qui ne couvre que 2025-2026)",
+    "answer": "Je ne trouve pas cette information dans le document.\n\nLe document fourni contient des informations sur les dividendes versés au titre des exercices 2024 et 2025, ainsi que sur un acompte sur dividendes prévu pour 2026, mais ne mentionne pas les dividendes versés au titre de l'exercice 2020.",
+    "correct": true
+  },
+  {
+    "id": 19,
+    "type": "trap",
+    "question": "Quelle est la capitale de la France ?",
+    "reason": "Question hors sujet : teste que le modèle refuse même une info triviale qu'il connaît par ailleurs, s'il n'est pas dans les extraits fournis",
+    "answer": "Je ne trouve pas cette information dans le document.\n\nLe document fourni est un extrait du rapport financier de BNP Paribas contenant des listes de sociétés, leurs pays d'implantation, leurs méthodes de contrôle et leurs pourcentages d'intérêt. Il ne contient pas d'informations géographiques générales sur les capitales des pays.",
+    "correct": true
+  },
+  {
+    "id": 20,
+    "type": "trap",
+    "question": "Combien d'agences BNP Paribas compte le réseau en France ?",
+    "reason": "Information sur le réseau d'agences, hors des pages retenues",
+    "answer": "Je ne trouve pas cette information dans le document.\n\nLe document fourni présente le périmètre de consolidation et l'organisation des différentes entités de BNP Paribas par pays et métier, mais il ne contient pas de données sur le nombre d'agences du réseau en France.",
+    "correct": true
+  }
+]

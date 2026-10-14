@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "type": "answerable",
+    "question": "Quel est le résultat net du Groupe au premier semestre 2026 ?",
+    "expected_keywords": ["7 800", "7800"],
+    "source_page": 37
+  },
+  {
+    "id": 2,
+    "type": "answerable",
+    "question": "Quel est le résultat net part du Groupe au premier semestre 2026 ?",
+    "expected_keywords": ["7 562", "7562"],
+    "source_page": 24
+  },
+  {
+    "id": 3,
+    "type": "answerable",
+    "question": "Quel est le produit net bancaire (PNB) du Groupe au 2ème trimestre 2026 ?",
+    "expected_keywords": ["14 091", "14091"],
+    "source_page": 1
+  },
+  {
+    "id": 4,
+    "type": "answerable",
+    "question": "Quelles sont les frais de gestion du Groupe au 2ème trimestre 2026 ?",
+    "expected_keywords": ["7 986", "7986"],
+    "source_page": 1
+  },
+  {
+    "id": 5,
+    "type": "answerable",
+    "question": "Quel est le coefficient d'exploitation du Groupe au 2ème trimestre 2026 ?",
+    "expected_keywords": ["56,7", "56.7"],
+    "source_page": 1
+  },
+  {
+    "id": 6,
+    "type": "answerable",
+    "question": "Qui est l'Administrateur Directeur Général de BNP Paribas ?",
+    "expected_keywords": ["Jean-Laurent Bonnafé", "Bonnafé"],
+    "source_page": 2
+  },
+  {
+    "id": 7,
+    "type": "answerable",
+    "question": "Qui préside le Conseil d'administration de BNP Paribas ?",
+    "expected_keywords": ["Jean Lemierre", "Lemierre"],
+    "source_page": 2
+  },
+  {
+    "id": 8,
+    "type": "answerable",
+    "question": "Quand le plan stratégique 2030 de BNP Paribas sera-t-il présenté ?",
+    "expected_keywords": ["février 2027", "fevrier 2027"],
+    "source_page": 2
+  },
+  {
+    "id": 9,
+    "type": "answerable",
+    "question": "Quel est le produit net bancaire de CIB (Corporate and Institutional Banking) au 2ème trimestre 2026 ?",
+    "expected_keywords": ["5 281", "5281"],
+    "source_page": 7
+  },
+  {
+    "id": 10,
+    "type": "answerable",
+    "question": "Quelles sont les frais de gestion de CIB au 2ème trimestre 2026 ?",
+    "expected_keywords": ["2 836", "2836"],
+    "source_page": 7
+  },
+  {
+    "id": 11,
+    "type": "answerable",
+    "question": "Quel est le résultat avant impôt de CIB au 2ème trimestre 2026 ?",
+    "expected_keywords": ["2 355", "2355"],
+    "source_page": 7
+  },
+  {
+    "id": 12,
+    "type": "answerable",
+    "question": "Quel est le montant de la caisse et des banques centrales au bilan du Groupe au 30 juin 2026 ?",
+    "expected_keywords": ["212 998", "212998"],
+    "source_page": 25
+  },
+  {
+    "id": 13,
+    "type": "answerable",
+    "question": "Quel est le montant des intérêts et produits assimilés au premier semestre 2026 ?",
+    "expected_keywords": ["34 931", "34931"],
+    "source_page": 24
+  },
+  {
+    "id": 14,
+    "type": "answerable",
+    "question": "Quel est le montant des commissions (produits) au premier semestre 2026 ?",
+    "expected_keywords": ["9 807", "9807"],
+    "source_page": 24
+  },
+  {
+    "id": 15,
+    "type": "answerable",
+    "question": "Quel est le ratio CET1 du Groupe au 30 juin 2026 ?",
+    "expected_keywords": ["13,0", "13.0", "13%"],
+    "source_page": 1
+  },
+  {
+    "id": 16,
+    "type": "trap",
+    "question": "Quel est l'effectif total du Groupe BNP Paribas ?",
+    "reason": "Information sur les ressources humaines, hors des pages retenues (rapport d'activité + états financiers)"
+  },
+  {
+    "id": 17,
+    "type": "trap",
+    "question": "Quel est le cours de l'action BNP Paribas aujourd'hui ?",
+    "reason": "Donnée de marché en temps réel, jamais présente dans un document figé à une date de dépôt"
+  },
+  {
+    "id": 18,
+    "type": "trap",
+    "question": "Quel dividende BNP Paribas a-t-il versé au titre de l'exercice 2020 ?",
+    "reason": "Période hors du document (qui ne couvre que 2025-2026)"
+  },
+  {
+    "id": 19,
+    "type": "trap",
+    "question": "Quelle est la capitale de la France ?",
+    "reason": "Question hors sujet : teste que le modèle refuse même une info triviale qu'il connaît par ailleurs, s'il n'est pas dans les extraits fournis"
+  },
+  {
+    "id": 20,
+    "type": "trap",
+    "question": "Combien d'agences BNP Paribas compte le réseau en France ?",
+    "reason": "Information sur le réseau d'agences, hors des pages retenues"
+  }
+]

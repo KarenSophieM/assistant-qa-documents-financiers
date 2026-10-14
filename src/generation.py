@@ -12,7 +12,7 @@ from retrieval import load_index, retrieve
 load_dotenv()
 
 GEN_MODEL = "claude-haiku-4-5"
-TOP_K = 5
+TOP_K = 8  # relevé de 5 à 8 après l'évaluation (jour 5) : une bonne réponse était classée 7e, juste hors du top 5
 
 SYSTEM_PROMPT = """Tu es un assistant qui répond à des questions sur un document financier public (BNP Paribas).
 
