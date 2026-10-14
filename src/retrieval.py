@@ -27,7 +27,7 @@ def load_index():
     return chunks, embeddings
 
 
-def retrieve(question: str, chunks: List[Dict], embeddings: np.ndarray, top_k: int = 5) -> List[Dict]:
+def retrieve(question: str, chunks: List[Dict], embeddings: np.ndarray, top_k: int = 8) -> List[Dict]:
     """input_type='query' (asymétrique par rapport à l'indexation en 'document'),
     recommandé par Voyage AI pour de meilleurs résultats de recherche."""
     client = voyageai.Client(api_key=os.environ["VOYAGE_API_KEY"])
