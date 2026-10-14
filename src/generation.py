@@ -3,10 +3,15 @@ récupérés par retrieval.py, avec citation de page et refus honnête si
 l'information n'est pas présente dans le document."""
 
 import os
+import pathlib
+import sys
 
 import anthropic
 from dotenv import load_dotenv
 
+# Permet d'importer retrieval.py aussi bien en lançant ce fichier directement
+# (`python src/generation.py`) qu'en l'important comme module (`from src.generation import ...`)
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from retrieval import load_index, retrieve
 
 load_dotenv()

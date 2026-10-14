@@ -5,7 +5,11 @@ automatiquement le pourcentage de bonnes réponses."""
 import json
 import pathlib
 import re
+import sys
 
+# Permet d'importer generation.py/retrieval.py aussi bien en lançant ce fichier
+# directement (`python src/evaluate.py`) qu'en l'important comme module
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from generation import answer_question
 from retrieval import load_index
 

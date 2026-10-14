@@ -1,6 +1,12 @@
 """Outil interactif pour poser des questions en direct, utile pour une démo
 en entretien (pas besoin de relire du code, juste taper une question)."""
 
+import pathlib
+import sys
+
+# Permet d'importer generation.py/retrieval.py aussi bien en lançant ce fichier
+# directement (`python src/ask.py`) qu'en l'important comme module
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from generation import answer_question
 from retrieval import load_index
 
