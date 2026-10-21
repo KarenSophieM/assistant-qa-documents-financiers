@@ -16,6 +16,7 @@ Projet construit dans le cadre d'une candidature pour un poste Développeur Agen
 - [Rôle de chaque fichier](#rôle-de-chaque-fichier)
 - [Installation](#installation)
 - [Comment tout tester, étape par étape](#comment-tout-tester-étape-par-étape)
+- [Lancer l'interface web](#lancer-linterface-web)
 - [Résultats de l'évaluation](#résultats-de-lévaluation)
 - [Limites connues](#limites-connues)
 - [Pistes d'amélioration](#pistes-damélioration)
@@ -86,7 +87,8 @@ Assist_analyse_doc_financiers/
 │   ├── retrieval.py              étape ④ : recherche par similarité
 │   ├── generation.py             étape ⑤ : réponse encadrée par Claude
 │   ├── evaluate.py               fait tourner les 20 questions et mesure le score
-│   └── ask.py                    outil interactif pour poser des questions en direct
+│   ├── ask.py                    outil interactif pour poser des questions en direct
+│   └── app.py                    interface web de chat (Streamlit)
 └── data/
     ├── raw/
     │   └── bnp-paribas-amendement-s1-2026.pdf   le document source (160 pages)
@@ -112,6 +114,7 @@ Dans l'ordre où ils interviennent dans le pipeline :
 | `src/generation.py` | Combine `retrieval.py` avec un appel à Claude Haiku : construit le prompt avec les passages retrouvés et une consigne stricte, renvoie la réponse finale | question + index | réponse texte, avec citation de page |
 | `src/evaluate.py` | Fait tourner `generation.py` sur les 20 questions de `data/eval/questions.json`, compare automatiquement chaque réponse à ce qui est attendu, calcule le score | `questions.json` + index | `data/eval/results.json` + score affiché |
 | `src/ask.py` | Petit outil en ligne de commande pour poser ses propres questions en direct, utile pour une démonstration | question tapée au clavier | réponse affichée |
+| `src/app.py` | Interface web de chat (Streamlit) qui réutilise `retrieval.py` et `generation.py` sans les modifier : historique de la conversation, index chargé une seule fois en cache | question tapée dans le navigateur | réponse affichée dans le chat |
 
 Aucun fichier ne fait plus d'une chose : c'est volontaire, pour que chaque étape du RAG soit isolée, testable et explicable séparément.
 
@@ -179,6 +182,16 @@ chunks, embeddings = load_index()
 print(answer_question('Votre question ici ?', chunks, embeddings))
 "
 ```
+
+## Lancer l'interface web
+
+Une fois l'installation faite et les étapes 1 et 2 lancées au moins une fois (`chunks.json` doit exister), le plus simple pour une démo est l'interface de chat :
+
+```bash
+streamlit run src/app.py
+```
+
+Le navigateur s'ouvre automatiquement sur `http://localhost:8501`. On y pose ses questions comme dans un chat, chaque réponse cite la page du document. `Ctrl+C` dans le terminal pour arrêter.
 
 ## Résultats de l'évaluation
 
